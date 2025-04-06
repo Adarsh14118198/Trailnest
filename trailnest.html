@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <title>TrailNest - Ultimate Trek Checklist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --primary-color: #2e8b57;
+      --bg-color: #ffffff;
+      --text-color: #222;
+    }
+    [data-theme="dark"] {
+      --primary-color: #90ee90;
+      --bg-color: #121212;
+      --text-color: #f5f5f5;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      padding: 20px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 12px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+    .theme-toggle {
+      padding: 6px 12px;
+      background: white;
+      color: var(--primary-color);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .checklist {
+      margin-top: 30px;
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+    }
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    label {
+      display: block;
+      margin: 8px 0;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .theme-toggle {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><img src="https://img.icons8.com/ios-filled/50/mountain.png" alt="TrailNest Logo" class="logo"/>TrailNest</h1>
+    <button class="theme-toggle" onclick="toggleTheme()">Switch Theme</button>
+  </header>
+
+  <div class="checklist">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trek Checklist</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("data:image/jpeg;base64,/9j/hoWBHULmDDElLxFXbOEYISGGJ1K25loU1GytxNEwcf4BWEwZp/jRxEMqgCrlVhGgUzdkBhUqlCYxOogVEQlJ2KNomtxIYYlbgqMxCjE7/gYtMM3JpACMwxg/2gOyEMI5Q5ImYgKGZQwZv/FFMbhhVBy/xMspsrEvMouiquAGKfYRuI0oezFHInUS5eCMxCmajZALkJojUaAuqm4dLUCrK+zDDF5Q0y1Aobgw8pALK1qMJAqoyS73EmgVGK1acRCwW3uM4FNRtutQWVs7D4rC5Yux5HvxMkLYZccnN6gKi6Vbka0uy1ALeOBULmbOzAuMvzAKCoCOItBcIgWBqFeG4Bj+R/xdaWuYFILxGXnYlEiskzRjOeeU9hbAuoSyXUFV4VHavk2YzrDTOx1H/A3/AIXGR/wjcNzAnJ7OzafzCCxahgVi4aprXY7lOB5HUdf4IbgoHqS7ij2Hl+PIzAPsVaasTn+HAhwxyAESGHUtLQMDOQ2A6nES04SluI641h/cvcGMJn8Gtk3mG4UAw3EiztZ//9k=");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: white;
+      padding: 20px;
+    }
+    .checklist {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      padding: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="checklist">
+    <h1>Himalayan Trek Checklist</h1>
+
+
+    <h2>Head & Neck</h2>
+    <ul>
+      <li><input type="checkbox"> Woolen Cap</li>
+      <li><input type="checkbox"> Neck Warmer</li>
+      <li><input type="checkbox"> Sunglasses</li>
+    </ul>
+
+
+    <h2>Upper Body</h2>
+    <ul>
+      <li><input type="checkbox"> Thermal Top</li>
+      <li><input type="checkbox"> Fleece Jacket</li>
+      <li><input type="checkbox"> Padded Jacket</li>
+      <li><input type="checkbox"> Waterproof Jacket</li>
+    </ul>
+
+
+    <h2>Hands</h2>
+    <ul>
+      <li><input type="checkbox"> Inner Gloves</li>
+      <li><input type="checkbox"> Outer Gloves</li>
+    </ul>
+
+
+    <h2>Lower Body</h2>
+    <ul>
+      <li><input type="checkbox"> Thermal Bottom</li>
+      <li><input type="checkbox"> Trekking Pants</li>
+      <li><input type="checkbox"> Rain Pants</li>
+    </ul>
+
+
+    <h2>Feet</h2>
+    <ul>
+      <li><input type="checkbox"> Trekking Shoes</li>
+      <li><input type="checkbox"> Socks</li>
+      <li><input type="checkbox"> Gaiters</li>
+    </ul>
+  </div>
+</body>
+</html>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme');
+      document.documentElement.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+    }
+  </script>
+</body>
+</html>
